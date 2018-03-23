@@ -1,0 +1,252 @@
+/* 
+    This style sheet stylizes the controls inside our
+    TA Manager JavaFX application. Note that controls
+    in the UI must have the same class as those below in 
+    order to be rendered using those properties.
+
+    Note that it may seem overwhelming to see so many different
+    style classes, even though our application doesn't have that
+    many controls, but what this allows us to do is easily
+    control and update the style of the entire user interface
+    via a stylesheet without having the change Java code.
+
+    Author:	Richard McKenna
+    Version:	1.0
+*/
+.root
+{
+    -fx-font-family: "Verdana";
+}
+
+.dialog_pane {
+    -fx-padding:15;
+}
+
+.dialog_heading {
+    -fx-font-size: 24pt;
+    -fx-background-color: bisque;
+    -fx-color:red;
+}
+
+.dialog_prompt {
+    -fx-font-size: 16pt;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.plain_pane{
+    
+}
+
+.bordered_pane {
+    -fx-background-color: #FDEBD0;
+    -fx-background-radius: 5.0;
+    -fx-padding: 15;
+    -fx-spacing: 20;
+    -fx-border-width: 1.5px;
+    -fx-border-color: #000000;
+}
+
+.header_pane{
+    -fx-background-color:#ccccff;
+}
+
+.header_label {
+    -fx-font-size: 20pt;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.ta_table{
+    -fx-font-size:12pt;
+    -fx-background-color:#000066;
+}
+
+.table-view .column-header.ta_table_column_header .label {
+    -fx-text-fill:black;
+    -fx-background-color:#d3d3d3;
+}
+
+.add_ta_pane{
+    -fx-padding: 5 10 5 10;
+}
+
+.add_ta_text_field{
+    -fx-font-size: 14pt;
+}
+
+.add_ta_button{
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;    
+}
+
+.clear_button{
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;    
+}
+
+.office_hours_grid
+{
+    -fx-border-color: #f1c27d; 
+}
+
+.office_hours_grid_time_column_header_pane
+{
+    -fx-background-color:#d3d3d3;
+    -fx-border: 1px;
+    -fx-border-color: #000066;   
+}
+.office_hours_grid_time_column_header_label{
+    -fx-text-fill:black;
+    -fx-font-size:10pt;   
+    -fx-font-weight:bold;
+    -fx-padding: 10 20 10 20;
+}
+
+.office_hours_grid_day_column_header_pane
+{
+    -fx-background-color:#d3d3d3;
+    -fx-border: 1px;
+    -fx-border-color: #000066;
+}
+.office_hours_grid_day_column_header_label
+{
+    -fx-text-fill:black;
+    -fx-font-size:10pt;   
+    -fx-font-weight:bold;
+    -fx-padding: 10 20 10 20;
+}
+
+.office_hours_grid_time_cell_pane
+{
+    -fx-font-weight:bold;
+    -fx-font-size:10pt;  
+    -fx-background-color:#f1f1f1; 
+    -fx-border: 1px;   
+    -fx-border-color:black
+}
+.office_hours_grid_time_cell_label
+{
+    -fx-font-size:10pt;
+    -fx-text-fill:black;
+}
+
+.office_hours_grid_ta_cell_pane
+{
+    -fx-background-color:#f1f1f1;
+    -fx-border: 1px;
+    -fx-border-color: black;
+}
+.office_hours_grid_ta_cell_label{
+    -fx-font-weight:bold;
+    -fx-font-size:10pt;  
+    -fx-padding: 5 10 5 10;
+}
+
+.highlighted_grid_cell {
+    -fx-border-color: #ffff00;
+    -fx-border: 5px;
+}
+.highlighted_grid_row_or_column {
+    -fx-border-color: #aaaa00;
+    -fx-border: 5px;
+    -fx-border-style:solid;
+}
+
+.work_space
+{
+    -fx-background-color:#FDEBD0;
+    -fx-padding:15;
+}
+.tab_pane
+{
+   -fx-background-color: -fx-outer-border, -fx-text-box-border, #f1c27d;
+   -fx-border-color: #000000;
+   -fx-border: 10px;
+   -fx-focus-color: #f1c27d;
+}
+
+.tab_pane>*.tab-header-area>*.tab-header-background 
+{
+   -fx-background-color: -fx-outer-border, -fx-text-box-border, #f1c27d;
+   -fx-border-color: #f1c27d;
+   -fx-border: 10px;
+}
+
+.tabs:selected 
+{
+    -fx-background-color: #ffffff;
+}
+.course_details
+{
+    -fx-background-color:#f1c27d;
+    -fx-spacing: 20;
+    -fx-padding:15;
+}
+.course_info
+{
+    -fx-background-color:#F7F7F7;
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    
+    -fx-border-color: #000000;
+    -fx-border: 5px;
+}
+
+.big_label
+{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.small_label
+{
+    -fx-font-size: 10;
+}
+
+.heavy_small_label
+{
+    -fx-font-weight: bold;
+}
+
+.heavy_middle_label
+{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.heavy_big_label
+{
+    -fx-font-size: 30;
+    
+}
+
+.TA_Hbox
+{
+    -fx-padding: 10;
+    -fx-background-color:#000000;
+}
+
+.right_pane
+{
+    -fx-background-color:#f1c27d;
+   
+    -fx-border-color: #f1c27d;
+}
+
+.right_scroll_pane
+{
+    -fx-background: #f1c27d;
+    -fx-border-color: #f1c27d;
+    
+}
+
+
+
+
+
+
